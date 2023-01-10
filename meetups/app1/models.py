@@ -29,4 +29,4 @@ class Meetup(models.Model):
     participant = models.ManyToManyField(Participant, blank=True, null=True)
 
     def __str__(self):
-        return f'{self.title} {self.slug}'
+        return f'{self.title} - {self.slug}'
